@@ -1,4 +1,7 @@
 # Techniques-for-Ensuring-the-Continuity-of-EDR-Services
+## SCOPE
+The project, titled "Techniques for Ensuring the Continuity of EDR Services," proposes the creation of an automated system for detecting and responding to attacks. This system utilizes separate data collection flows to manage the activities of protected systems and to handle responses to potential alerts.
+
 ## IDS ROLE
 Intrusion Detection and Prevention Systems (IDS/IPS) are designed to monitor data flows entering and exiting a system to detect and alert on suspicious behavior (IDS role) or to detect, alert, and directly block attacks (IPS role). A Network-based IDS (NIDS) monitors network traffic and aims to identify attacks related to System Intrusion, such as Backdoor Installation, Denial of Service, and Trojan Horse Attacks. NIDS alone cannot provide comprehensive protection for connected systems. Primarily, NIDS are focused on detecting and generating alerts and require integration into more complex solutions for effective response to alerts. Additionally, NIDS may struggle with Social Engineering attacks targeting human vulnerabilities and Zero-Day attacks due to the absence of rules for new threats.
 
