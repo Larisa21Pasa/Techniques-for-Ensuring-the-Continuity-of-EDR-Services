@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="54ee13be-de21-4b2c-8bac-6e66bc999cc3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../RaportGenerator/.idea/RaportGenerator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RaportGenerator/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C2_Server/alerts_received.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../C2_Server/alerts_received.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C2_Server/c2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../C2_Server/c2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C2_Server/c2_server.db" beforeDir="false" afterPath="$PROJECT_DIR$/../C2_Server/c2_server.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C2_Server/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/../C2_Server/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C2_Server/consumer_mq.py" beforeDir="false" afterPath="$PROJECT_DIR$/../C2_Server/consumer_mq.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C2_Server/server_log.log" beforeDir="false" afterPath="$PROJECT_DIR$/../C2_Server/server_log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C2_Server/victim.py" beforeDir="false" afterPath="$PROJECT_DIR$/../C2_Server/agent_c2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RabbitMQ_Consuming/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RabbitMQ_Consuming/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wazuh_Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Wazuh_Server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wazuh_Server/elasticsearch/log_elk_collector.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Wazuh_Server/elasticsearch/log_elk_collector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wazuh_Server/error_app_log.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Wazuh_Server/error_app_log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wazuh_Server/rabbitmq/rabbit.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Wazuh_Server/rabbitmq/rabbit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wazuh_Server/util/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Wazuh_Server/util/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../db.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../p3_w1_sift.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2frnU5pOqYPLbrQyngx5TXPSFkO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="rev_shell_1_to_1" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="reverse_shell" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rev_shell_1_to_1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="54ee13be-de21-4b2c-8bac-6e66bc999cc3" name="Changes" comment="" />
+      <created>1714568076107</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714568076107</updated>
+    </task>
+    <servers />
+  </component>
+</project>

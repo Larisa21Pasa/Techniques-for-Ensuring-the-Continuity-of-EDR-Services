@@ -1,0 +1,37 @@
+Calcule Relevante
+Timpul mediu dintre publicare și consumare pentru fiecare agent:
+Aceasta arată cât timp stau alertele în coadă înainte de a fi procesate.
+Timpul mediu de procesare al alertelor pentru fiecare agent:
+Aceasta arată cât timp durează procesarea unei alerte înainte de a fi publicată.
+Compararea timpilor de procesare între agenți:
+Identifică dacă există agenți care procesează alertele mai lent decât alții.
+Durata medie de procesare până la publicare în general:
+Pentru a înțelege cât de rapid sunt procesate alertele înainte de a fi publicate.
+Numărul total de alerte per agent:
+Pentru a vedea dacă un agent specific primește mai multe alerte decât alții.
+Grafice Relevante
+Histogramă pentru timpul de publicare la consumare:
+Distribuția timpilor de latență pentru toate alertele.
+Boxplot pentru timpul de procesare pe agent:
+Compararea timilor de procesare între agenți.
+Bar chart pentru numărul total de alerte per agent:
+Vizualizarea numărului de alerte procesate de fiecare agent.
+Line chart pentru latența în timp:
+Evoluția latenței în timp pentru fiecare agent pentru a vedea trenduri și spike-uri.
+
+
+
+
+
+
+import pandas as pd
+
+def simplify_json(json_obj, template):
+    df = pd.json_normalize(json_obj)
+    simplified_df = df[template.keys()]
+    return simplified_df.to_dict(orient='records')
+
+# Utilizarea funcției
+json_obj = {...}  # Obiectul tău JSON
+template = {...}  # Template-ul tău
+simplified_json = simplify_json(json_obj, template)

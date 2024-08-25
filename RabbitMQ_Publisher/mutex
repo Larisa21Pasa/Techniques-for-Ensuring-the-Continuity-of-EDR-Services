@@ -1,0 +1,60 @@
+import pika
+from concurrent.futures import ThreadPoolExecutor
+import multiprocessing
+from schedule import repeat, every
+import threading
+
+# Mutex pentru a sincroniza accesul la conexiunea RabbitMQ
+connection_mutex = threading.Lock()
+
+# Funcție pentru a crea conexiunea la RabbitMQ și declara coada
+def create_rabbitmq_connection_and_channel():
+    connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
+    channel = connection.channel()
+    channel.queue_declare(queue='my_queue')  # Declară coada
+    return connection, channel
+
+# Funcție pentru a publica mesajul în coada RabbitMQ
+def publish_to_rabbitmq(channel, message):
+    channel.basic_publish(exchange='', routing_key='my_queue', body=message)
+
+# Funcție pentru a procesa alertele
+def process_agent_alerts(agent_id):
+    try:
+        alerts = get_suricata_alerts_last_30m(agent_id)
+        formatted_alerts = format_and_filter_alerts(alerts)
+
+        connection, channel = create_rabbitmq_connection_and_channel()
+
+        with connection_mutex:
+            publish_to_rabbitmq(channel, formatted_alerts)
+
+        connection.close()
+
+    except Exception as e:
+        print(f"Eroare la colectarea alertelor pentru agentul {agent_id}: {e}")
+
+# Funcție pentru a colecta și trimite alertele la intervale regulate
+@repeat(every(10).seconds)
+def collect_and_send_alerts():
+    agent_ids = get_all_agents()
+    num_cpus = multiprocessing.cpu_count()
+
+    with ThreadPoolExecutor(max_workers=num_cpus) as executor:
+        futures = [executor.submit(process_agent_alerts, agent_id) for agent_id in agent_ids]
+
+# Funcțiile dummy pentru a simula funcționalitatea reală
+def get_suricata_alerts_last_30m(agent_id):
+    # Simulează obținerea alertelor
+    return f"Alert for agent {agent_id}"
+
+def format_and_filter_alerts(alerts):
+    # Simulează formatarea și filtrarea alertelor
+    return alerts
+
+def get_all_agents():
+    # Simulează obținerea tuturor agenților
+    return ["agent1", "agent2", "agent3"]
+
+# Pornește colectarea și trimiterea alertelor
+collect_and_send_alerts()

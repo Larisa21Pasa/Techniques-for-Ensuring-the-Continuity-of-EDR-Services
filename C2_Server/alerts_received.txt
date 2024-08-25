@@ -1,0 +1,176 @@
+[2024-06-22 16:29:33.202651] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-22T13:20:48.859469+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 16:29:33.205224] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-22T13:20:47.857918+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 16:29:33.207002] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-22T13:20:46.856258+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 16:29:33.208975] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-22T13:20:45.854618+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 16:29:33.211346] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-22T13:20:44.853037+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 16:29:33.215382] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-22T13:20:43.851377+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 16:29:33.217341] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-22T13:20:42.849796+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 16:29:33.219407] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-22T13:20:41.848244+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 16:29:33.221785] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-22T13:20:40.846669+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 16:29:33.223659] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-22T13:20:39.844886+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 16:29:33.256730] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-22T13:28:39.894040+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 16:29:33.259188] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-22T13:28:38.892320+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 16:29:33.261384] <10.177.186.5> generate : {'dest_ip': '10.177.186.9', 'timestamp': '2024-06-22T13:28:37.890815+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.5', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '1', 'action': 'allowed', 'severity': '3', 'signature': 'TE-AM PRINS CU PINGUL', 'category': 'Not Suspicious Traffic'}}
+
+[2024-06-22 16:29:33.264991] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-22T13:28:37.890787+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 16:29:33.269192] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-22T13:28:37.890787+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '1', 'action': 'allowed', 'severity': '3', 'signature': 'TE-AM PRINS CU PINGUL', 'category': 'Not Suspicious Traffic'}}
+
+[2024-06-22 16:29:33.274568] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-22T13:28:24.652917+0000', 'dest_port': '22', 'src_port': '35836', 'src_ip': '10.177.186.9', 'proto': 'TCP', 'event_type': 'alert', 'alert': {'signature_id': '2006546', 'action': 'allowed', 'severity': '1', 'signature': 'ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack', 'category': 'Attempted Administrator Privilege Gain'}}
+
+[2024-06-22 20:46:17.023314] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-22T17:45:39.064177+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 20:46:17.027449] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-22T17:45:39.064177+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '1', 'action': 'allowed', 'severity': '3', 'signature': 'TE-AM PRINS CU PINGUL', 'category': 'Not Suspicious Traffic'}}
+
+[2024-06-22 20:46:17.029216] <10.177.186.5> generate : {'dest_ip': '10.177.186.9', 'timestamp': '2024-06-22T17:45:39.064205+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.5', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '1', 'action': 'allowed', 'severity': '3', 'signature': 'TE-AM PRINS CU PINGUL', 'category': 'Not Suspicious Traffic'}}
+
+[2024-06-22 20:48:17.881781] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-22T17:46:06.864631+0000', 'dest_port': '22', 'src_port': '59044', 'src_ip': '10.177.186.9', 'proto': 'TCP', 'event_type': 'alert', 'alert': {'signature_id': '2006546', 'action': 'allowed', 'severity': '1', 'signature': 'ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack', 'category': 'Attempted Administrator Privilege Gain'}}
+
+[2024-06-22 20:59:16.783210] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-22T17:58:32.421445+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 20:59:16.786696] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-22T17:58:32.421445+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '1', 'action': 'allowed', 'severity': '3', 'signature': 'TE-AM PRINS CU PINGUL', 'category': 'Not Suspicious Traffic'}}
+
+[2024-06-22 20:59:47.692066] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-22T17:58:42.302835+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 20:59:47.698373] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-22T17:58:41.278767+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 21:05:47.532716] <10.177.186.10> generate : {'dest_ip': '10.177.186.10', 'timestamp': '2024-06-22T18:05:10.334452+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 21:05:47.537128] <10.177.186.10> generate : {'dest_ip': '10.177.186.10', 'timestamp': '2024-06-22T18:05:09.310510+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 21:05:47.540086] <10.177.186.10> generate : {'dest_ip': '10.177.186.10', 'timestamp': '2024-06-22T18:05:08.286564+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 21:05:47.543537] <10.177.186.10> generate : {'dest_ip': '10.177.186.10', 'timestamp': '2024-06-22T18:05:07.262509+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 21:05:47.547528] <10.177.186.10> generate : {'dest_ip': '10.177.186.10', 'timestamp': '2024-06-22T18:05:06.238425+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 21:05:47.551441] <10.177.186.10> generate : {'dest_ip': '10.177.186.10', 'timestamp': '2024-06-22T18:05:05.186876+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '10000001', 'action': 'allowed', 'severity': '3', 'signature': 'ICMP Ping'}}
+
+[2024-06-22 21:05:47.555239] <10.177.186.10> generate : {'dest_ip': '10.177.186.10', 'timestamp': '2024-06-22T18:05:05.186876+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 21:05:47.557800] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-22T18:05:20.702799+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 21:05:47.562519] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-22T18:05:19.678807+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 21:05:47.564966] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-22T18:05:18.654731+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 21:05:47.571144] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-22T18:05:17.630792+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 21:05:47.573190] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-22T18:05:16.606894+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 21:05:47.576928] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-22T18:05:15.582746+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 21:05:47.579863] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-22T18:05:14.526527+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-22 21:05:47.583772] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-22T18:05:14.526527+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '10000001', 'action': 'allowed', 'severity': '3', 'signature': 'ICMP Ping'}}
+
+[2024-06-24 08:57:12.665075] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-24T05:56:50.129826+0000', 'dest_port': '22', 'src_port': '46294', 'src_ip': '10.177.186.9', 'proto': 'TCP', 'event_type': 'alert', 'alert': {'signature_id': '2006546', 'action': 'allowed', 'severity': '1', 'signature': 'ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack', 'category': 'Attempted Administrator Privilege Gain'}}
+
+[2024-06-24 09:11:29.183211] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-24T06:11:17.629352+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:11:29.186816] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-24T06:11:16.628007+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:11:29.195497] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-24T06:11:15.626527+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:11:29.199853] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-24T06:11:14.625109+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:11:29.202649] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-24T06:11:13.623599+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:11:29.205646] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-24T06:11:12.622249+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:11:29.207809] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-24T06:11:11.620832+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:11:29.211103] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-24T06:11:10.619214+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:11:29.224426] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-24T06:11:09.619541+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:11:29.228528] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-24T06:11:08.618023+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:11:29.272989] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-24T06:11:20.660027+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:11:29.277324] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-24T06:11:19.658438+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:11:29.283488] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-24T06:11:18.656876+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:11:29.287451] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-24T06:11:17.655223+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:11:29.291450] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-24T06:11:16.653624+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:11:29.296172] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-24T06:11:15.653857+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '1', 'action': 'allowed', 'severity': '3', 'signature': 'TE-AM PRINS CU PINGUL', 'category': 'Not Suspicious Traffic'}}
+
+[2024-06-24 09:11:29.301438] <10.177.186.5> generate : {'dest_ip': '10.177.186.9', 'timestamp': '2024-06-24T06:11:15.653887+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.5', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '1', 'action': 'allowed', 'severity': '3', 'signature': 'TE-AM PRINS CU PINGUL', 'category': 'Not Suspicious Traffic'}}
+
+[2024-06-24 09:11:29.303822] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-24T06:11:15.653857+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:11:29.309672] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-24T06:10:41.565938+0000', 'dest_port': '22', 'src_port': '45290', 'src_ip': '10.177.186.9', 'proto': 'TCP', 'event_type': 'alert', 'alert': {'signature_id': '2006546', 'action': 'allowed', 'severity': '1', 'signature': 'ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack', 'category': 'Attempted Administrator Privilege Gain'}}
+
+[2024-06-24 09:15:47.672790] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-24T06:14:31.371327+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:15:47.676867] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-24T06:14:30.347373+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:15:47.678682] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-24T06:14:29.323371+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:15:47.681077] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-24T06:14:28.299317+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:15:47.683679] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-24T06:14:26.228207+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:15:47.685705] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-24T06:14:27.275259+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:15:47.688351] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-24T06:14:24.183849+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:15:47.692771] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-24T06:14:25.227565+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP_INFO PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:15:47.722772] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-24T06:14:34.606417+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:15:47.725877] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-24T06:14:35.607990+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:15:47.729192] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-24T06:14:33.604884+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:15:47.731141] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-24T06:14:32.603526+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:15:47.734337] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-24T06:14:30.600810+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:15:47.736562] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-24T06:14:31.602124+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:15:47.738267] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-24T06:14:29.599560+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:15:47.740235] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-24T06:14:28.598085+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-24 09:15:47.742481] <10.177.186.8> generate : {'dest_ip': '10.177.186.8', 'timestamp': '2024-06-24T06:14:27.596827+0000', 'dest_port': '0', 'src_port': '0', 'src_ip': '10.177.186.9', 'proto': 'ICMP', 'event_type': 'alert', 'alert': {'signature_id': '2100366', 'action': 'allowed', 'severity': '3', 'signature': 'GPL ICMP PING *NIX', 'category': 'Misc activity'}}
+
+[2024-06-27 11:50:59.704157] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-27T08:34:32.125509+0000', 'dest_port': '22', 'src_port': '50988', 'src_ip': '10.177.186.9', 'proto': 'TCP', 'event_type': 'alert', 'alert': {'signature_id': '2006546', 'action': 'allowed', 'severity': '1', 'signature': 'ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack', 'category': 'Attempted Administrator Privilege Gain'}}
+
+[2024-06-27 11:50:59.728492] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-27T08:35:19.483656+0000', 'dest_port': '22', 'src_port': '43618', 'src_ip': '10.177.186.9', 'proto': 'TCP', 'event_type': 'alert', 'alert': {'signature_id': '2006546', 'action': 'allowed', 'severity': '1', 'signature': 'ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack', 'category': 'Attempted Administrator Privilege Gain'}}
+
+[2024-06-27 11:59:22.781473] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-27T08:58:53.402776+0000', 'dest_port': '22', 'src_port': '46048', 'src_ip': '10.177.186.9', 'proto': 'TCP', 'event_type': 'alert', 'alert': {'signature_id': '2006546', 'action': 'allowed', 'severity': '1', 'signature': 'ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack', 'category': 'Attempted Administrator Privilege Gain'}}
+
+[2024-06-27 12:02:53.581499] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-27T09:01:59.987667+0000', 'dest_port': '22', 'src_port': '48048', 'src_ip': '10.177.186.9', 'proto': 'TCP', 'event_type': 'alert', 'alert': {'signature_id': '2006546', 'action': 'allowed', 'severity': '1', 'signature': 'ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack', 'category': 'Attempted Administrator Privilege Gain'}}
+
+[2024-06-27 12:06:05.597973] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-27T09:05:15.957391+0000', 'dest_port': '22', 'src_port': '37184', 'src_ip': '10.177.186.9', 'proto': 'TCP', 'event_type': 'alert', 'alert': {'signature_id': '2006546', 'action': 'allowed', 'severity': '1', 'signature': 'ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack', 'category': 'Attempted Administrator Privilege Gain'}}
+
+[2024-06-27 16:44:38.431480] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-27T13:43:59.749944+0000', 'dest_port': '22', 'src_port': '58042', 'src_ip': '10.177.186.9', 'proto': 'TCP', 'event_type': 'alert', 'alert': {'signature_id': '2006546', 'action': 'allowed', 'severity': '1', 'signature': 'ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack', 'category': 'Attempted Administrator Privilege Gain'}}
+
+[2024-06-30 19:57:47.026076] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-30T16:57:30.361240+0000', 'dest_port': '22', 'src_port': '52366', 'src_ip': '10.177.186.9', 'proto': 'TCP', 'event_type': 'alert', 'alert': {'signature_id': '2006546', 'action': 'allowed', 'severity': '1', 'signature': 'ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack', 'category': 'Attempted Administrator Privilege Gain'}}
+
+[2024-06-30 20:59:21.251087] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-30T17:53:44.917180+0000', 'dest_port': '22', 'src_port': '37624', 'src_ip': '10.177.186.9', 'proto': 'TCP', 'event_type': 'alert', 'alert': {'signature_id': '2006546', 'action': 'allowed', 'severity': '1', 'signature': 'ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack', 'category': 'Attempted Administrator Privilege Gain'}}
+
+[2024-06-30 20:59:21.289456] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-30T17:54:30.887585+0000', 'dest_port': '22', 'src_port': '42208', 'src_ip': '10.177.186.9', 'proto': 'TCP', 'event_type': 'alert', 'alert': {'signature_id': '2006546', 'action': 'allowed', 'severity': '1', 'signature': 'ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack', 'category': 'Attempted Administrator Privilege Gain'}}
+
+[2024-06-30 20:59:21.323049] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-30T17:56:02.703585+0000', 'dest_port': '22', 'src_port': '56360', 'src_ip': '10.177.186.9', 'proto': 'TCP', 'event_type': 'alert', 'alert': {'signature_id': '2006546', 'action': 'allowed', 'severity': '1', 'signature': 'ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack', 'category': 'Attempted Administrator Privilege Gain'}}
+
+[2024-06-30 20:59:21.355010] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-30T17:56:48.583584+0000', 'dest_port': '22', 'src_port': '58376', 'src_ip': '10.177.186.9', 'proto': 'TCP', 'event_type': 'alert', 'alert': {'signature_id': '2006546', 'action': 'allowed', 'severity': '1', 'signature': 'ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack', 'category': 'Attempted Administrator Privilege Gain'}}
+
+[2024-06-30 21:05:25.876791] <10.177.186.5> generate : {'dest_ip': '10.177.186.5', 'timestamp': '2024-06-30T18:05:03.259620+0000', 'dest_port': '22', 'src_port': '57532', 'src_ip': '10.177.186.9', 'proto': 'TCP', 'event_type': 'alert', 'alert': {'signature_id': '2006546', 'action': 'allowed', 'severity': '1', 'signature': 'ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack', 'category': 'Attempted Administrator Privilege Gain'}}
+
